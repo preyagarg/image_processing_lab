@@ -23,7 +23,7 @@ image_processing_lab/
 ├── Assignment4.ipynb
 ├── Assignment6.ipynb
 ├── images/
-│   └── sample_image.jpg
+│   └── sample_image.png
 └── outputs/
     ├── assignment1/
     ├── assignment2/
