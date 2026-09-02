@@ -1,38 +1,35 @@
 # Image Processing Lab
 
-This repository contains Image Processing laboratory assignments implemented in Python using simple, manual image-processing logic. OpenCV is used mainly for reading and saving images, while NumPy is used for basic array operations. Ready-made OpenCV processing functions are avoided where the assignment asks for the algorithm itself.
+Image Processing laboratory assignments written in Python.
 
-## Assignments
-
-- **Assignment 1** - Grayscale to binary using mean threshold and user-defined threshold
-- **Assignment 2** - RGB to grayscale using mean and user-defined channel weights
-- **Assignment 3** - Image border/padding and image complement for grayscale and binary images
-- **Assignment 4** - Log transform, gamma transform and contrast stretching
-- **Assignment 6** - Averaging, weighted and Gaussian smoothing using manual convolution
-
-> Assignment 5 will be added when the question is provided.
+The programs use simple logic with OpenCV and NumPy. The image-processing operations are implemented manually instead of using ready-made OpenCV processing functions.
 
 ## Structure
 
 ```text
 image_processing_lab/
-├── README.md
-├── Assignment1.ipynb
-├── Assignment2.ipynb
-├── Assignment3.ipynb
-├── Assignment4.ipynb
-├── Assignment6.ipynb
-├── images/
-│   └── sample_image.png
-└── outputs/
-    ├── assignment1/
-    ├── assignment2/
-    ├── assignment3/
-    ├── assignment4/
-    └── assignment6/
+├── Assignment1/
+│   ├── mean_threshold_binary.py
+│   └── user_threshold_binary.py
+├── Assignment2/
+│   ├── rgb_to_gray_mean.py
+│   └── rgb_to_gray_weighted.py
+├── Assignment3/
+│   ├── image_border.py
+│   └── image_complement.py
+├── Assignment4/
+│   ├── log_transform.py
+│   ├── gamma_transform.py
+│   └── contrast_stretching.py
+├── Assignment6/
+│   ├── averaging_filter.py
+│   ├── weighted_filter.py
+│   └── gaussian_filter.py
+└── images/
+    └── sample_image.png
 ```
 
-The notebooks already contain executed sample runs and embedded output images. Running a notebook again saves its generated images into the corresponding `outputs/assignmentX/` folder.
+Assignment 5 will be added when the question is provided.
 
 ## Requirements
 
@@ -40,3 +37,5 @@ The notebooks already contain executed sample runs and embedded output images. R
 opencv-python
 numpy
 ```
+
+Run the programs from the repository root using Python. Each program displays the input and processed image in OpenCV windows.
